@@ -1,0 +1,37 @@
+.logo {
+  width: 45px;
+}
+
+.divider {
+  width: 1px;
+  height: 40px;
+  background: #bbb;
+  margin: 0 15px;
+}
+
+.engineering-text {
+  font-size: 12px;
+  color: #555;
+  font-weight: bold;
+}
+
+
+.nav-link {
+  font-size: 14px;
+  font-weight: 600;
+  color: #1f2f57 !important;
+}
+
+.navbar-contact-btn {
+  background-color: #1f3a6f;
+  color: #fff;
+  padding: 8px 20px;
+  border-radius: 25px;
+  border: none;
+  text-decoration: none;
+}
+
+.search-icon {
+  font-size: 18px;
+  cursor: pointer;
+}

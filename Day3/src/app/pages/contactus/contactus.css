@@ -1,0 +1,106 @@
+/* ================= FAQ SECTION ================= */
+.faq-section {
+  padding: 80px 0;
+  background-color: #f8f9fc;
+}
+
+/* LEFT : FAQ */
+.faq-left {
+  padding: 40px;
+}
+
+.faq-left h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #1f3568;
+  margin-bottom: 30px;
+}
+
+
+/* Accordion */
+.faq-left .accordion {
+  width: 100%;
+}
+
+.accordion-item {
+  border: none;
+  margin-bottom: 15px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+.accordion-button {
+  font-weight: 600;
+  color: #1f3568;
+  background-color: #fff;
+  padding: 16px 20px;
+}
+
+.accordion-button:not(.collapsed) {
+  background-color: #1f3568;
+  color: #fff;
+}
+
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+.accordion-body {
+  padding: 18px 20px;
+  color: #555;
+  background-color: #fff;
+}
+
+/* RIGHT : FORM */
+.write-message {
+  padding: 40px;
+}
+
+.write-message h2 {
+  font-size: 28px;
+  font-weight: 700;
+  color: #1f3568;
+  margin-bottom: 25px;
+}
+
+.form-control {
+  border-radius: 6px;
+  padding: 12px;
+  border: 1px solid #ddd;
+}
+
+.form-control:focus {
+  border-color: #1f3568;
+  box-shadow: none;
+}
+
+textarea.form-control {
+  resize: none;
+}
+
+/* Button */
+.btn-primary {
+  background-color: #1f3568;
+  border: none;
+  padding: 12px 30px;
+  font-weight: 600;
+  border-radius: 6px;
+}
+
+.btn-primary:hover {
+  background-color: #142654;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 991px) {
+  .faq-left,
+  .write-message {
+    padding: 20px;
+  }
+
+  .faq-left h1,
+  .write-message h2 {
+    text-align: center;
+  }
+}

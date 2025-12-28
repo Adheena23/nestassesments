@@ -1,0 +1,86 @@
+.heading {
+  text-align: center;
+  margin: 30px 0;
+  font-weight: 700;
+}
+
+/* ================= GRID SPACING ================= */
+.row {
+  margin-top: 10px;
+}
+
+/* ================= CARD ================= */
+.card {
+  border: none;
+  border-radius: 14px;
+  background: #ffffff;
+  overflow: hidden;
+  height: 100%;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+/* ================= IMAGE ================= */
+.card-img-top {
+  height: 160px;
+  object-fit: contain;   /* better for product images */
+  padding: 12px;
+  background: #f9fafb;
+  transition: transform 0.35s ease;
+}
+
+/* ================= BODY ================= */
+.card-body {
+  padding: 12px 14px;
+  text-align: center;
+}
+
+/* ================= TITLE ================= */
+.card-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: #1f2937;
+  margin-bottom: 6px;
+
+  /* limit title to 2 lines */
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* ================= PRICE ================= */
+.card-text {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #16a34a;   /* professional green */
+  margin-bottom: 0;
+}
+.price-btn {
+  background: linear-gradient(135deg, #16a34a, #22c55e);
+  color: #ffffff;
+  border: none;
+  padding: 6px 14px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: default;        /* looks like a label */
+  margin-top: 6px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.card:hover .price-btn {
+  background: linear-gradient(135deg, #15803d, #16a34a);
+}
+
+
+/* ================= HOVER EFFECT ================= */
+.card:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 16px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card:hover .card-img-top {
+  transform: scale(1.06);
+}

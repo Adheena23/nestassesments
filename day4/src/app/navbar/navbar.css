@@ -1,0 +1,59 @@
+/* MAIN NAVBAR */
+.navbar {
+  background: linear-gradient(90deg, #0d6efd, #0d6efd);
+  padding: 14px 35px;
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+/* NAV LINKS */
+.navbar .nav-link {
+  color: #ffffff !important;
+  font-weight: 500;
+  margin-right: 16px;
+  padding: 8px 16px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+/* HOVER EFFECT */
+.navbar .nav-link:hover {
+  background-color: rgba(255, 255, 255, 0.25);
+  color: #ffffff !important;
+}
+
+/* ACTIVE LINK */
+.navbar .nav-link.active,
+.navbar .nav-link.router-link-active {
+  background-color: #ffffff;
+  color: #3e0afb !important;
+  font-weight: 600;
+}
+
+/* REMOVE TOGGLER BORDER */
+.navbar-toggler {
+  border: none;
+}
+
+/* REMOVE FOCUS OUTLINE */
+.navbar-toggler:focus {
+  box-shadow: none;
+}
+
+/* WHITE TOGGLER ICON */
+.navbar-toggler-icon {
+  filter: invert(1);
+}
+
+/* MOBILE MENU */
+@media (max-width: 991px) {
+  .navbar-collapse {
+    background-color: #3e0afb;
+    margin-top: 10px;
+    padding: 12px;
+    border-radius: 10px;
+  }
+
+  .navbar .nav-link {
+    margin: 8px 0;
+  }
+}

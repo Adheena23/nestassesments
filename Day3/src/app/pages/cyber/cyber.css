@@ -1,0 +1,121 @@
+.engineering-section {
+  padding: 80px 0;
+  background-color: #f8f9fa;
+}
+
+/* LEFT CONTENT */
+.content-box {
+  padding: 40px 60px;
+}
+
+h1 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #0d2c6c;
+  margin-bottom: 30px;
+}
+
+.section-text {
+  font-size: 18px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* RIGHT IMAGE */
+.image-box {
+  position: relative;
+  padding: 0;
+  overflow: hidden;
+}
+
+/* DIAGONAL EFFECT */
+.image-diagonal {
+  clip-path: polygon(12% 0, 100% 0, 100% 100%, 0 100%);
+}
+
+.diagonal-img {
+  width: 100%;
+  height: 100%;
+  min-height: 420px;
+  object-fit: cover;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+  .image-diagonal {
+    clip-path: none;
+  }
+
+  .content-box {
+    text-align: center;
+    padding: 30px 20px;
+  }
+
+  h1 {
+    text-align: center;
+  }
+}
+.accordion-item {
+  border: none;
+  border-radius: 12px;
+  margin-bottom: 15px;
+  overflow: hidden;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.08);
+}
+
+/* Header Button */
+.accordion-button {
+  background-color: #f8f9fa;
+  color: #0d2c6c;
+  font-size: 17px;
+  font-weight: 600;
+  padding: 20px 24px;
+  border: none;
+  box-shadow: none;
+}
+
+/* Remove default focus */
+.accordion-button:focus {
+  box-shadow: none;
+}
+
+/* Active Accordion */
+.accordion-button:not(.collapsed) {
+  background-color: #0d2c6c;
+  color: #ffffff;
+}
+
+/* Arrow Icon */
+.accordion-button::after {
+  filter: brightness(0.3);
+}
+
+/* Arrow Active */
+.accordion-button:not(.collapsed)::after {
+  filter: brightness(10);
+}
+
+/* Body */
+.accordion-body {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #444;
+  background-color: #ffffff;
+  padding: 25px;
+}
+
+/* Strong text */
+.accordion-body strong {
+  color: #0d2c6c;
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+  h1 {
+    text-align: center;
+  }
+
+  .accordion {
+    padding: 0 15px;
+  }
+}
